@@ -1,0 +1,115 @@
+.navbargue{
+    padding: 15px;
+}
+
+
+.ilab{
+    width: 18%;
+    margin-left: 25px;
+    
+}
+
+.logo{
+    justify-content: flex-start;
+}
+
+.nav-menu{
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+}
+
+
+.btn-light{
+    display: flex;
+    justify-content: center;
+    border: solid 1.5px black;
+    border-radius: 9px;
+    width: 115px;
+    margin-right: 10px;
+
+    
+}
+.btn-primary{
+    display: flex;
+    justify-content: center;
+    border: solid 0.5px black;
+    border-radius: 9px;
+    width: 115px;
+    background-color: #6995ed;
+
+
+}
+
+.login{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.main-content{
+    background-image: url("img/hero.jpg");
+    height: 50rem;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    
+}
+
+.main-content .col-6{
+    color: white;
+    padding: 8rem;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1.5px;
+    margin-left: 45px;
+
+    
+}
+
+.icon1 {
+    margin-left: 4px;
+    width: 13px;
+}
+.icon2{
+    width: 25px;
+}
+.icon3{
+    width: 20px;
+}
+
+.txt1{
+    margin-left: 13px;
+}
+.txt2{
+    margin-left: 4px;
+}
+.txt3{
+    margin-left: 10px;
+}
+
+.footergue{
+    padding: 135px;
+}
+
+.logo-footer{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.title-footer{
+    color: gray;
+}
+
+.kopi{
+    color: gray;
+}

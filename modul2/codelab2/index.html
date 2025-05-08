@@ -1,0 +1,92 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codelab 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <form name="myForm" class="name" onSubmit="return validation()" method="post">
+        <div class="inside">
+            <label for="fname">Nama Lengkap:</label>
+            <br><input class="namal" type="text" id="fname"><br><br>
+            <label for="lname">Email:</label>
+            <br><input class="surel" type="text" id="email"><br><br>
+            <label for="lname">Alamat:</label>
+            <br><textarea type="text" id="address" rows="4" cols="50"></textarea><br><br>
+            <input type="submit" value="Daftar"
+                style="background: #3498DB; border: none; width: 59px; height: 30px; color: #fff;">
+        </div>
+    </form>
+
+    <style>
+        body {
+            background: #3498DB;
+            background-size: cover;
+        }
+
+        .name {
+            width: 450px;
+            height: 445px;
+            border-radius: 5px;
+            background: #FFF;
+            padding: 15px;
+            margin-left: 680px;
+            margin-top: 45px;
+        }
+
+        label {
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            color: #939292;
+        }
+
+        .namal,
+        .surel {
+            width: 420px;
+            height: 45px;
+            background: #EFEFEF;
+            border: none;
+        }
+
+        #address {
+            width: 420px;
+            height: 150px;
+            background: #EFEFEF;
+            border: none;
+        }
+
+
+        .inside {
+            margin-left: 15px;
+            margin-top: 15px;
+        }
+    </style>
+
+    <script>
+        function validation() {
+            let fname = document.getElementById("fname").value;
+            let email = document.getElementById("email").value;
+            let address = document.getElementById("address").value;
+
+            if (fname === "" || email === "" || address === "") {
+                alert("Anda harus mengisi semua data dengan lengkap!");
+                return false;
+            }
+            else {
+                alert("Anda Berhasil Mendaftar")
+            }
+        }
+
+    </script>
+</body>
+
+</html>

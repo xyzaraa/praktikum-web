@@ -1,0 +1,94 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="calculator">
+      <table class="content">
+        <td colspan="3">
+          <textarea class="screen" type="text" id="result"></textarea>
+        </td>
+          <tr>
+            <td>
+              <input type="button" value="AC" onclick="handleAC()">
+            </td>
+            <td>
+              <input type="button" value="DE" onclick="handleDE()">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="button" value="x²" onclick="handlePowers()">
+            </td>
+            <td>
+              <input type="button" value="Mod" onclick="handleButtonClick('%')" >
+            </td>
+            <td>
+              <input type="button" value="." onclick="handleButtonClick('.')">
+            </td>
+            <td>
+              <input type="button" value="/" onclick="handleButtonClick('/')">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="button" value="7" onclick="handleButtonClick('7')">
+            </td>
+            <td>
+              <input type="button" value="8" onclick="handleButtonClick('8')">
+            </td>
+            <td>
+              <input type="button" value="9" onclick="handleButtonClick('9')">
+            </td>
+            <td>
+              <input type="button" value="*" onclick="handleButtonClick('*')">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="button" value="4" onclick="handleButtonClick('4')">
+            </td>
+            <td>
+              <input type="button" value="5" onclick="handleButtonClick('5')">
+            </td>
+            <td>
+              <input type="button" value="6" onclick="handleButtonClick('6')">
+            </td>
+            <td>
+              <input type="button" value="-" onclick="handleButtonClick('-')">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="button" value="1" onclick="handleButtonClick('1')">
+            </td>
+            <td>
+              <input type="button" value="2" onclick="handleButtonClick('2')">
+            </td>
+            <td>
+              <input type="button" value="3" onclick="handleButtonClick('3')">
+            </td>
+            <td>
+              <input type="button" value="+" onclick="handleButtonClick('+')">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="button" value="00" onclick="handleButtonClick('00')">
+            </td>
+            <td>
+              <input type="button" value="0" onclick="handleButtonClick('0')">
+            </td>
+            <td colspan="2">
+              <input type="button" value="=" onclick="handleCalculate()">
+            </td>
+          </tr>
+  
+      </table>
+    </div>
+    <script src="formula.js"></script>
+  </body>
+</html>

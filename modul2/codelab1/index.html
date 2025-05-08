@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codelab 1</title>
+</head>
+
+<body>
+    <div class="konten">
+        <h1>PENJUMLAHAN BILANGAN</h1>
+        <label for="Bilangan Pertama">Bilangan Pertama</label>
+        <input type="number" id="first">
+        <label for="Bilangan Kedua">Bilangan Kedua</label>
+        <input type="number" id="second">
+    </div>
+    <div class="tombol">
+        <br>
+        <button type="button" onclick="add()">Jumlahkan</button>
+        <button type="button" onclick="reset()">Ulang</button>
+    </div>
+
+    <script>
+
+        function add() {
+            var Bilangan_Pertama = parseFloat(document.getElementById("first").value);
+            var Bilangan_Kedua = parseFloat(document.getElementById("second").value);
+
+            var sum = Bilangan_Pertama + Bilangan_Kedua;
+
+            alert("Hasil Penjumlahan: " + sum);
+        }
+
+        function reset() {
+            document.getElementById("first").value = "";
+            document.getElementById("second").value = "";
+        }
+
+    </script>
+</body>
+
+</html>
